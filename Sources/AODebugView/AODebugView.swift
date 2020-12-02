@@ -106,7 +106,7 @@ extension AODebugView {
         NSLog("\(level.rawValue)[\(sourceFileName(filePath: filename))]:\(line) \(funcName) \(object)\n")
     }
     
-    static func redirectLogs() {
+    public static func redirectLogs() {
         let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let documentsDirectory = paths[0]
         let fileName = "AppLog.log"
