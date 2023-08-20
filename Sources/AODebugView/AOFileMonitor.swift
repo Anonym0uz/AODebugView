@@ -13,7 +13,7 @@ protocol AOFileMonitorDelegate: AnyObject {
     func didReceive(changes: String)
 }
 
-class AOFileMonitor {
+final class AOFileMonitor {
     
     let url: URL
 
